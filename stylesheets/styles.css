@@ -7,6 +7,12 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 }
 
+.hidden {
+	font-size: 0 !important;
+        color: #ddd;
+        background-color: #ddd;
+}
+
 p {
 	margin: 0;
 	padding: 0;
