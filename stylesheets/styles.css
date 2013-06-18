@@ -59,13 +59,12 @@ a:hover {
 }
 
 ::selection {
-	background-color: #626;
+	background-color: #c8c;
 }
 
 #name {
-	position: relative;
-	left: 0.4em;
 	margin: 0;
+	padding-left: 0.4em;
 	
 	font-size: 4em;
 	text-transform: lowercase;
