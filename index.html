@@ -16,7 +16,7 @@
 	<div class="section" id="presentation">
 		<h2 class="title">Presentation</h2>
 		<div class="content">
-			<p>My name is Alexandre Daigle, I am currently studying mathematics at ulaval.</p>
+			<p>My name is Alexandre Daigle, I am entering graduate school at uwaterloo.</p>
 			<p>I am passionate about computer science, scotch+whiskies and board games.</p>
 		</div>
 	</div>
@@ -25,8 +25,8 @@
 		<div class="content">
 			<ul>
 				<li><a href="files/adaigle_cv.pdf">curriculum vitae</a></li>
-				<li><a href="mailto:daigle_alexandre@hotmail.com">email</a></li>
-				<li><a href="https://github.com/adaigle">github</a></li>
+				<li><a href="mailto:alexandre@adaigle.com">email</a></li>
+				<!-- <li><a href="https://github.com/adaigle">github</a></li> -->
 				<li><a href="http://www.linkedin.com/in/daiglealexandre">linkedin</a></li>
 			</ul>
 		</div>
@@ -35,7 +35,31 @@
 		<h2 class="title">Publications</h2>
 		<div class="content">
 			<ul class="timeframe">
-				<li title="2012"><a href="files/TR_SCE_12-04_nat_traversal.pdf">NAT Traversal in peer-to-peer architecture</a></li>
+				<li title="2014">
+					<a href="files/formal_grammar.pdf">Grammaire formelle appliquée à l'optimisation</a> [<a id="ref-formal_grammar" class="ref">ref</a>, unpublished]
+					<div class="bibentry">
+						<textarea rows="7", cols="80">
+@unpublished{formal_grammar:2014,
+  author={Alexandre Daigle},
+  title={Grammaire formelle appliquée à l'optimisation},
+  note={},
+  year={2014},
+  month={may}
+}</textarea>
+					</div>
+				</li>
+				<li title="2012">
+					<a href="files/nat_traversal_TR.pdf">NAT Traversal in peer-to-peer architecture</a> [<a id="ref-nat_traversal_TR" class="ref">ref</a>, technical report]
+					<div class="bibentry">
+<textarea rows="7", cols="80">
+@techreport{nat_traversal:2012,
+  author={Marc-André Poulin, Lucas Rioux Maldague, Alexandre Daigle and François Gagnon},
+  title={NAT Traversal in peer-to-peer architecture},
+  institution={Carleton University},
+  year={2012}
+}</textarea>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -65,7 +89,19 @@
 			<p></p>
 		</div>
 	</div>
-    
+
+	<script type="text/javascript" src="javascripts/zepto.min.js"></script>
 	<script type="text/javascript" src="javascripts/google.analytics.js"></script>
+	<script>
+	$(document).ready(function(){
+
+		$( ".bibentry" ).hide();
+
+		$("a.ref").click(function(){
+			$( ":not(#" + $(this).attr("id") + ") + .bibentry" ).hide();
+			$( "#" + $(this).attr("id") + " + .bibentry" ).toggle();
+		});
+	});
+	</script>
   </body>
 </html>

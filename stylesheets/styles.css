@@ -101,6 +101,15 @@ a:hover {
 	text-transform: lowercase;
 }
 
+.section .subtitle {
+	position: relative;
+	margin: 1em 0;
+	
+	font-size: 1em;
+	text-align: left;
+	text-transform: lowercase;
+}
+
 .section .content {
 	position: relative;
 	left: 15%;
@@ -118,6 +127,19 @@ a:hover {
 }
 
 #publication {
+}
+
+#publication a.ref {
+	cursor: pointer;
+}
+
+#publication .bibentry {
+	padding: 0 3em;
+}
+
+#publication .bibentry textarea {
+	background-color: #ccc;
+	border: 1px solid #bbb;
 }
 
 #document {
