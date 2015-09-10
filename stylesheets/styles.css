@@ -9,8 +9,12 @@ body {
 
 .hidden {
 	font-size: 0 !important;
-        color: #ddd;
-        background-color: #ddd;
+    color: #ddd;
+    background-color: #ddd;
+}
+
+.jshidden {
+	display: none;
 }
 
 p {
@@ -35,7 +39,7 @@ ul.timeframe {
 
 ul.timeframe li:not([title]) {
 	position: relative;
-	left: 1.75em;
+	left: 2.075em;
 }
 
 ul.timeframe li[title]:before {
